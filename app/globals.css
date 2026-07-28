@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0B0F19;
+  color: #E2E8F0;
+}
+
+::selection {
+  background-color: #06B6D4;
+  color: #E2E8F0;
+}
+
+/* Foco visível para acessibilidade via teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #06B6D4;
+  outline-offset: 3px;
+}
+
+/* Animação de flutuação para ícones de tecnologia */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
