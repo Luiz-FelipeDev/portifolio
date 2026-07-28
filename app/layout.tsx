@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   title: "Luiz Felipe | Desenvolvedor Full Stack",
   description:
     "Portfólio de Luiz Felipe, desenvolvedor Full Stack especializado em Java, Spring Boot, React e Next.js.",
+    icons: {
+    icon: "/docsify.svg", // ou "/icon.png"
+  },
 };
 
 
