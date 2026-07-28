@@ -32,10 +32,11 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Seu Nome — Portfólio",
+  title: "Luiz Felipe | Desenvolvedor Full Stack",
   description:
-    "Portfólio pessoal — sobre mim, experiência, projetos e contato.",
+    "Portfólio de Luiz Felipe, desenvolvedor Full Stack especializado em Java, Spring Boot, React e Next.js.",
 };
+
 
 export default function RootLayout({
   children,
